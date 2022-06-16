@@ -49,7 +49,7 @@ jobs:
           sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
           ./rclone sync --user-agent "NONISV|Microsoft|Microsoft OneDrive for Windows/22.065.0327.0002" GoogleDrive: OneDrive: --fast-list --delete-during --transfers 20 --checkers 20 --ignore-existing --local-no-check-updated --drive-chunk-size 32M --drive-acknowledge-abuse --drive-keep-revision-forever
-          echo "Google文件已备份到Onedrive盘!!"
+          echo "Google文件已备份到Onedrive盘!"
 
       # - name: Delete workflow runs
       #   uses: GitRML/delete-workflow-runs@main
